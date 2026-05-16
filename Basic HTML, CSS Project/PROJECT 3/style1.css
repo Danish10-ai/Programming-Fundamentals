@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    0%{
+        left: 0;
+        top: 0%;
+        background-color: crimson;
+        rotate: 0;
+        rotate: 360deg;
+    }
+    50%{
+        left: 80%;
+        top: 0%;
+        rotate: 0deg;
+    }
+    100%{
+        left: 80%;
+        top: 50%;
+        background-color: blue;
+        rotate: 360deg;
+    }
+}
